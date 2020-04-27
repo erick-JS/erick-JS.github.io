@@ -12,7 +12,7 @@ minimize.addEventListener("click", closeNews);
 function viewNews() {
     //URL onde está a API
     var apiKey = '5df8ff5340dd4105bc6f4cf868af7b96';
-    var url = 'http://.newsapi.org/v2/top-headlines?' +
+    var url = 'http://newsapi.org/v2/top-headlines?' +
         'q=coronavírus&' +
         'country=br&' +
         'sortBy=popularity&' +
