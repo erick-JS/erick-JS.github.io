@@ -53,9 +53,13 @@ h1 {
   overflow-x: hidden;
 }
 
+#states {
+  margin-left: 20%;
+}
+
 .table-fixed {
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 5%;
+  margin-right: 4%;
   width: auto;
   background: #fff;
   text-align: center;
@@ -323,6 +327,11 @@ i {
     margin-left: 0;
     background: #fff;
     text-align: center;
+    font-size: 15px;
+  }
+
+  #states {
+    margin-left: 0;
   }
 
   /*This will work on every browser but Chrome Browser*/
