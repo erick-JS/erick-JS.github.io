@@ -57,6 +57,11 @@ h1 {
   margin-left: 20%;
 }
 
+#cities{
+  margin-left: 0;
+  width: 10px;
+}
+
 .table-fixed {
   margin-left: 5%;
   margin-right: 4%;
@@ -149,8 +154,8 @@ input[type=button]:active {
 
 .fab {
   position: fixed;
-  bottom: 32px;
-  right: 32px;
+  bottom: 0;
+  right: 0;
   border-radius: 50px;
   width: 60px;
   height: 60px;
@@ -334,9 +339,14 @@ i {
     margin-left: 0;
   }
 
+  #cities {
+    margin-left: 0;
+    width: 100%;
+  }
+
   /*This will work on every browser but Chrome Browser*/
   .table-fixed thead {
-    position: relative;
+    position: sticky;
     /*position: -webkit-sticky;*/
     top: 0;
     /*z-index: 1;*/
