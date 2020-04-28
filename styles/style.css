@@ -55,13 +55,9 @@ h1 {
 
 .table-fixed {
   width: auto;
-  /*margin-bottom: 6em;*/
   background: #fff;
   text-align: center;
-}
-
-#cities thead{
-  width: auto;
+  font-size: 13px;
 }
 
 /*This will work on every browser but Chrome Browser*/
