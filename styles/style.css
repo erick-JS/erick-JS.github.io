@@ -17,7 +17,7 @@ header {
 
 .casos {
   width: auto;
-  height: 500px;
+  height: 40%;
   margin-top: 0.5em;
   border-radius: 20px;
 }
@@ -42,6 +42,82 @@ h1 {
   border-radius: 30px;
 }
 
+.content {
+  width: auto;
+  height: 250px;
+  padding: 0.5em;
+  background: blue;
+  margin-left: 100px;
+  border-radius: 0 0 20px 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.table-fixed {
+  width: auto;
+  /*margin-bottom: 6em;*/
+  background: #fff;
+  text-align: center;
+}
+
+/*This will work on every browser but Chrome Browser*/
+.table-fixed thead {
+  position: relative;
+  /*position: -webkit-sticky;*/
+  top: 0;
+  /*z-index: 1;*/
+  background-color: #129cbe;
+  color: #fff;
+}
+
+
+/*This will work on every browser*/
+.table-fixed thead th {
+  /*position: sticky;*/
+  position: -webkit-sticky;
+  height: 3em;
+  top: -5%;
+  z-index: 999;
+  background-color: #129cbe;
+  color: #fff;
+}
+
+td+td {
+  border-left: 1px solid #eee;
+}
+
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+th:not([scope=row]) {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th {
+  height: 0;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+
 select {
   width: 57%;
   height: 30px;
@@ -62,10 +138,9 @@ input[type=button] {
   font-weight: bold;
 }
 
-/*input[type=button]:active {
+input[type=button]:active {
   background: #a1660cd7;
 }
-*/
 
 .fab {
   position: fixed;
@@ -243,7 +318,6 @@ i {
 
   .table-fixed {
     width: 100%;
-    margin-bottom: 5em;
     background: #fff;
     text-align: center;
   }
@@ -267,6 +341,42 @@ i {
     z-index: 999;
     background-color: #129cbe;
     color: #fff;
+  }
+
+  td+td {
+    border-left: 1px solid #eee;
+  }
+
+
+  th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  th[scope=row] {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  th:not([scope=row]) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  th {
+    height: 0;
+    line-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    border: none;
+    white-space: nowrap;
   }
 
   select {
@@ -295,7 +405,7 @@ i {
   }
 
   /*table {
-    *width: 790px;
+    width: 790px;
     text-align: center;
     border: solid 3px white;
     background: white;
@@ -305,25 +415,21 @@ i {
     width: 100%;
   }*/
 
-  td+td {
-    border-left: 1px solid #eee;
-  }
-
-  td,
+  /*td,
   th {
     border-bottom: 1px solid #eee;
     background: #129cbe;
     color: #ffffff;
     padding: 10px 25px;
-  }
+  }*/
 
-  table td {
+  /*table td {
     border: solid 3px white;
     max-width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+  }*/
 
   /*table th {
     padding-top: 2px;
@@ -442,37 +548,6 @@ i {
   /*.container {
     overflow-y: auto;
     height: 200px;
-  }
-  
-  th {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
-  
-  /*th[scope=row] {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    z-index: 1;
-  }
-  
-  th:not([scope=row]) {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
-  
-  /*th {
-    height: 0;
-    line-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: transparent;
-    border: none;
-    white-space: nowrap;
   }*/
 
   /*th div {
