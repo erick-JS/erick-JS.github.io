@@ -60,6 +60,10 @@ h1 {
   text-align: center;
 }
 
+#cities thead{
+  width: auto;
+}
+
 /*This will work on every browser but Chrome Browser*/
 .table-fixed thead {
   position: relative;
@@ -69,7 +73,6 @@ h1 {
   background-color: #129cbe;
   color: #fff;
 }
-
 
 /*This will work on every browser*/
 .table-fixed thead th {

@@ -82,7 +82,7 @@ function getDataAllCities() {
     fetch(url).then((res) => {
         return res.json();
     }).then((data) => {
-        cities.innerHTML = "<thead><th>Cidade</th><th>Estado</th><th>Casos</th><th>Óbitos</th></thead>"
+        cities.innerHTML = "<thead><th>Cidade</th><th>Estado</th><th>Casos confirmados</th><th>Óbitos</th></thead>"
         for (var i = 0; i < data.results.length; i++) {
             if(data.results[i].place_type === "state"){
                 i++;
