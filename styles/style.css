@@ -54,7 +54,8 @@ h1 {
 }
 
 .table-fixed {
-  margin-left: 5em;
+  margin-left: 10em;
+  margin-right: 10em;
   width: auto;
   background: #fff;
   text-align: center;
@@ -318,6 +319,8 @@ i {
 
   .table-fixed {
     width: 100%;
+    margin-right: 0;
+    margin-left: 0;
     background: #fff;
     text-align: center;
   }
