@@ -22,16 +22,17 @@ header {
   border-radius: 20px;
 }
 
-h1, h3{
+h1,
+h3 {
   color: #fff;
   text-align: center;
 }
 
-h1{
+h1 {
   font-size: 3em;
 }
 
-.number{
+.number {
   width: auto;
   height: 7em;
   border: solid 2px white;
@@ -40,6 +41,31 @@ h1{
   margin-right: 1em;
   border-radius: 30px;
 }
+
+select {
+  width: 57%;
+  height: 30px;
+  background: #a1660cd7;
+  border: solid 2px #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+input[type=button] {
+  background: #cf830fd7;
+  width: 40%;
+  height: 30px;
+  border: solid 2px #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*input[type=button]:active {
+  background: #a1660cd7;
+}
+*/
 
 .fab {
   position: fixed;
@@ -152,7 +178,7 @@ i {
     height: 28em;
   }
 
-  h1{
+  h1 {
     font-size: 30px;
   }
 
@@ -251,6 +277,7 @@ i {
     border-radius: 50px;
     color: #fff;
     font-weight: bold;
+    margin-left: 0;
   }
 
   input[type=button] {
@@ -277,11 +304,11 @@ i {
     border-spacing: 0;
     width: 100%;
   }*/
-  
+
   td+td {
     border-left: 1px solid #eee;
   }
-  
+
   td,
   th {
     border-bottom: 1px solid #eee;
@@ -289,7 +316,7 @@ i {
     color: #ffffff;
     padding: 10px 25px;
   }
-  
+
   table td {
     border: solid 3px white;
     max-width: 100px;
@@ -297,7 +324,7 @@ i {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  
+
   /*table th {
     padding-top: 2px;
     padding-bottom: 2px;
