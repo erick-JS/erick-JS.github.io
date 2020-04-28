@@ -20,6 +20,7 @@ header {
   height: 40%;
   margin-top: 0.5em;
   border-radius: 20px;
+  position: relative;
 }
 
 h1,
@@ -73,7 +74,7 @@ h1 {
 
 /*This will work on every browser but Chrome Browser*/
 .table-fixed thead {
-  position: relative;
+  position: sticky;
   /*position: -webkit-sticky;*/
   top: 0;
   /*z-index: 1;*/
@@ -83,11 +84,11 @@ h1 {
 
 /*This will work on every browser*/
 .table-fixed thead th {
-  /*position: sticky;*/
+  position: sticky;
   position: -webkit-sticky;
+  z-index: 0;
   height: 3em;
   top: -5%;
-  z-index: 999;
   background-color: #129cbe;
   color: #fff;
 }
@@ -360,7 +361,7 @@ i {
     position: -webkit-sticky;
     height: 3em;
     top: 0;
-    z-index: 999;
+    z-index: 0;
     background-color: #129cbe;
     color: #fff;
   }
