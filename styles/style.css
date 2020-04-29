@@ -58,10 +58,10 @@ h1 {
   margin-left: 20%;
 }
 
-#cities{
+/*#cities{
   margin-left: 0;
   width: 10px;
-}
+}*/
 
 .table-fixed {
   margin-left: 5%;
@@ -255,6 +255,59 @@ i {
 
 .bot {
   float: right;
+}
+
+
+footer{
+  width: auto;
+  height: 40em;
+  background: #129cbe;
+}
+
+.fonte{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.dados{
+  width: auto;
+  height: 80%;
+}
+
+.source{
+  width: 85%;
+  height: 8em;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 2em;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.source_title{
+  color: #129cbe
+}
+
+.autor{
+  text-align: center;
+  color: #fff;
+}
+
+.link_autor{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.links{
+  color: #020911;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -566,6 +619,12 @@ i {
 
   .bot {
     float: right;
+  }
+
+  footer{
+    width: auto;
+    height: 5em;
+    background: red;
   }
 
   /*.container {

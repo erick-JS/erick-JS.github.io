@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="icon/covid_icon.png">
 
     <!--ícones-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -99,7 +100,8 @@
                     <br>
                 <h3>Clique em ver detalhes para consultar o número de casos em uma determinada cidade. Se o município
                     digitado não estiver na tabela, significa que não há casos de COVID-19 na região.</h3>-->
-                <br><h3><label for="">Selecione um estado:</label></h3>
+                <br>
+                <h3><label for="">Selecione um estado:</label></h3>
                 <select id="item">
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
@@ -144,11 +146,44 @@
                 </table>
             </div>
         </div>
+        <br>
+        <footer>
+            <br>
+            <h2 class="fonte">Fontes utilizadas</h2>
+            <div class="dados">
+                <div class="source">
+                    <br>
+                    <h3 class="source_title">Tabela mundo</h3>
+                    <br>
+                    <a class="links" href="https://github.com/javieraviles/covidAPI" target="_blank">Github: javieraviles</a>
+                    <br><a class="links" href=" https://coronavirus-19-api.herokuapp.com/all" target="_blank">Informações globais</a>
+                    <br><a class="links" href="https://coronavirus-19-api.herokuapp.com/countries " target="_blank">Informações dos países</a>
+                </div>
+                <div class="source">
+                    <br>
+                    <h3 class="source_title">Tabela Brasil/Cidades</h3>
+                    <br>
+                    <a class="links" href="https://github.com/javieraviles/covidAPI" target="_blank">Github: javieraviles</a>
+                    <br><a class="links" href="https://covid.saude.gov.br/" target="_blank">Ministério da Saúde</a>
+                    <br><a class="links" href="https://brasil.io/dataset/covid19/caso/" target="_blank">Informação das cidades</a>
+                </div>
+                <div class="source">
+                    <br>
+                    <h3 class="source_title">Bot</h3>
+                    <br>
+                    <a class="links" href="https://portal.fiocruz.br/coronavirus/perguntas-e-respostas" target="_blank">Fiocruz</a>
+                    <br><a class="links" href="https://newsapi.org/s/google-news-br-api" target="_blank">Google News API</a>
+                </div>
+                <br>
+                <h3 class="autor">Desenvolvido por<a class="link_autor" href="https://github.com/erick-JS/erick-JS.github.io" target="_blank"><i>ERICK SILVA</i></a></h3>
+                <br><h4 class="social">Github: <a class="link_autor" href="https://github.com/erick-JS/erick-JS.github.io" target="_blank"><i>erick-JS</i></a></h4>
+                <h4 class="social">Linkedin: <a class="link_autor" href="https://www.linkedin.com/in/erick-jsilva/" target="_blank"><i>Erick Silva</i></a></h4>
+            </div>
+        </footer>
     </section>
     <div class="fab">
         <i class="fas fa-virus" style="font-size:48px;color:white;"></i>
     </div>
-
     <!--<div class="faq" id="box_fake">
         <div class="topo" style="height: 85px;">
             <i class="fas fa-window-minimize" style="font-size:20px;color:white;float:right;"></i>
@@ -193,7 +228,6 @@
             <div class='item' id="fake_news">Fake news</div>
         </div>
     </div>
-
 
     <script src="js/chatbot.js"></script>
     <script src="js/news.js"></script>
