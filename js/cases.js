@@ -47,7 +47,7 @@ function getDataCountries() {
         return res.json();
     }).then((data) => {
         for (var i = 0; i < 220; i++) {
-            if (data[i].country === "Brazil" || data[i].country === "World" || data[i].country === "") {
+            if (data[i].country === "World" || data[i].country === "") {
                 i++;
             }
 
