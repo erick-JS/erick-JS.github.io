@@ -258,24 +258,24 @@ i {
 }
 
 
-footer{
+footer {
   width: auto;
   height: 40em;
   background: #129cbe;
 }
 
-.fonte{
+.fonte {
   text-align: center;
   color: #fff;
   font-weight: bold;
 }
 
-.dados{
+.dados {
   width: auto;
   height: 80%;
 }
 
-.source{
+.source {
   width: 85%;
   height: 8em;
   background: #fff;
@@ -285,27 +285,27 @@ footer{
   text-align: center;
 }
 
-.source_title{
+.source_title {
   color: #129cbe
 }
 
-.autor{
+.autor {
   text-align: center;
   color: #fff;
 }
 
-.link_autor{
+.link_autor {
   color: #fff;
   text-decoration: none;
 }
 
-.social{
+.social {
   text-align: center;
   color: #fff;
   font-weight: bold;
 }
 
-.links{
+.links {
   color: #020911;
   text-decoration: none;
 }
@@ -621,7 +621,7 @@ footer{
     float: right;
   }
 
-  footer{
+  footer {
     width: auto;
     height: 5em;
     background: red;
@@ -648,4 +648,58 @@ footer{
     background: red;
     position: fixed;
   }*/
+
+  footer {
+    width: auto;
+    height: 20em;
+    background: #129cbe;
+  }
+
+  .fonte {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .dados {
+    width: auto;
+    height: 80%;
+  }
+
+  .source {
+    width: 30%;
+    height: 8em;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 2em;
+    margin-left: 2em;
+    text-align: center;
+    display: inline-block;
+    float: left;
+  }
+
+  .source_title {
+    color: #129cbe
+  }
+
+  .autor {
+    text-align: center;
+    color: #fff;
+  }
+
+  .link_autor {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .links {
+    color: #020911;
+    text-decoration: none;
+  }
 }
