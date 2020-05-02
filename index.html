@@ -155,29 +155,41 @@
                     <br>
                     <h3 class="source_title">Tabela mundo</h3>
                     <br>
-                    <a class="links" href="https://github.com/javieraviles/covidAPI" target="_blank">Github: javieraviles</a>
-                    <br><a class="links" href=" https://coronavirus-19-api.herokuapp.com/all" target="_blank">Informações globais</a>
-                    <br><a class="links" href="https://coronavirus-19-api.herokuapp.com/countries " target="_blank">Informações dos países</a>
+                    <a class="links" href="https://github.com/javieraviles/covidAPI" target="_blank">Github:
+                        javieraviles</a>
+                    <br><a class="links" href=" https://coronavirus-19-api.herokuapp.com/all"
+                        target="_blank">Informações globais</a>
+                    <br><a class="links" href="https://coronavirus-19-api.herokuapp.com/countries "
+                        target="_blank">Informações dos países</a>
                 </div>
                 <div class="source">
                     <br>
                     <h3 class="source_title">Tabela Brasil/Cidades</h3>
                     <br>
-                    <a class="links" href="https://github.com/javieraviles/covidAPI" target="_blank">Github: javieraviles</a>
+                    <a class="links" href="https://github.com/javieraviles/covidAPI" target="_blank">Github:
+                        javieraviles</a>
                     <br><a class="links" href="https://covid.saude.gov.br/" target="_blank">Ministério da Saúde</a>
-                    <br><a class="links" href="https://brasil.io/dataset/covid19/caso/" target="_blank">Informação das cidades</a>
+                    <br><a class="links" href="https://brasil.io/dataset/covid19/caso/" target="_blank">Informação das
+                        cidades</a>
                 </div>
                 <div class="source">
                     <br>
                     <h3 class="source_title">Bot</h3>
                     <br>
-                    <a class="links" href="https://portal.fiocruz.br/coronavirus/perguntas-e-respostas" target="_blank">Fiocruz</a>
-                    <br><a class="links" href="https://newsapi.org/s/google-news-br-api" target="_blank">Google News API</a>
+                    <a class="links" href="https://portal.fiocruz.br/coronavirus/perguntas-e-respostas"
+                        target="_blank">Fiocruz</a>
+                    <br><a class="links" href="https://newsapi.org/s/google-news-br-api" target="_blank">Google News
+                        API</a>
                 </div>
                 <br>
-                <h3 class="autor">Desenvolvido por<a class="link_autor" href="https://github.com/erick-JS/erick-JS.github.io" target="_blank"><i>ERICK SILVA</i></a></h3>
-                <br><h4 class="social">Github: <a class="link_autor" href="https://github.com/erick-JS/erick-JS.github.io" target="_blank"><i>erick-JS</i></a></h4>
-                <h4 class="social">Linkedin: <a class="link_autor" href="https://www.linkedin.com/in/erick-jsilva/" target="_blank"><i>Erick Silva</i></a></h4>
+                <h3 class="autor">Desenvolvido por<a class="link_autor"
+                        href="https://github.com/erick-JS/erick-JS.github.io" target="_blank"><i>ERICK SILVA</i></a>
+                </h3>
+                <br>
+                <h4 class="social">Github: <a class="link_autor" href="https://github.com/erick-JS/erick-JS.github.io"
+                        target="_blank"><i>erick-JS</i></a></h4>
+                <h4 class="social">Linkedin: <a class="link_autor" href="https://www.linkedin.com/in/erick-jsilva/"
+                        target="_blank"><i>Erick Silva</i></a></h4>
             </div>
         </footer>
     </section>
@@ -197,7 +209,7 @@
 
     <div id="box_news">
         <div class="topo" style="height: 85px;">
-            <i class="fas fa-window-minimize" onclick="closeNews()" style="font-size:20px;color:white;float:right;"></i>
+            <i class="fas fa-window-minimize" onclick = "closeNews()" style="font-size:20px;color:white;float:right;"></i>
             <br><br>
             <p class='mensagem'>
                 Veja abaixo as últimas notícias sobre o COVID-19.
@@ -230,9 +242,19 @@
     </div>
 
     <script src="js/chatbot.js"></script>
-    <script src="js/news.js"></script>
+    <script type="module" src="js/news.js"></script>
     <script src="js/cases.js"></script>
     <script src="js/fake_news.js"></script>
+
+    <script>
+        var faq_btn = document.querySelector(".fab");
+        var box_news = document.getElementById("box_news");
+
+        function closeNews() {
+            box_news.innerHTML = "";
+            faq_btn.style.visibility = "visible";
+        }
+    </script>
     <!--<script src="js/collapsible.js"></script>-->
 </body>
 

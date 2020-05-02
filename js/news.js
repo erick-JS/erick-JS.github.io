@@ -1,28 +1,31 @@
-var faq_btn = document.querySelector(".fab");
+import {key} from './key.js';
+
+//var faq_btn = document.querySelector(".fab");
 var noticias = document.getElementById("noticias");
 var box_news = document.getElementById("box_news");
 var covid_box = document.getElementById("box");
-var minimize = document.getElementById("minimize")
+//var minimize = document.getElementById("minimize")
 
 box_news.innerHTML = "";
 
 noticias.addEventListener("click", openNews);
-minimize.addEventListener("click", closeNews);
+//minimize.addEventListener("click", closeNews);
 
-function viewNews() {
-    //URL onde está a API
-    var apiKey = process.env.API_KEY;
+
+function viewNews(apikey) {
+    //URL onde está a APi
     var url = 'https://newsapi.org/v2/top-headlines?' +
         'q=coronavírus&' +
         'country=br&' +
         'sortBy=popularity&' +
-        `apiKey=${apiKey}`;
+        `apiKey=${apikey}`;
 
     //leitura da API
     fetch(url).then((res) => {
         return res.json();
     }).then((data) => {
         //console.log(data);
+        //console.log(Key);
         data.articles.forEach(article => {
             //Imagem da notícia
             var img = document.createElement('img');
@@ -56,18 +59,19 @@ function viewNews() {
     });
 }
 
+/*function closeNews() {
+    box_news.innerHTML = "";
+    faq_btn.style.visibility = "visible";
+}*/
+
 function openNews() {
     covid_box.style.visibility = "hidden";
     box_news.innerHTML = "<div class='faq' style='height: 430px;' id='box_news'>" +
-        "<div class='topo' style='height: 85px;'><i class='fas fa-window-minimize' id='minimize' style='font-size:20px;color:white;float:right;' onclick='closeNews()'></i>" +
+        "<div class='topo' style='height: 85px;'><i class='fas fa-window-minimize' style='font-size:20px;color:white;float:right;' onclick='closeNews()'></i>" +
         "<br><br><p class='mensagem'>Veja abaixo as últimas notícias sobre o COVID-19.</p></div>" +
         "<div class='news' id='last_news'></div>" +
         "</div>";
 
-    viewNews();
+    viewNews(key);
 }
 
-function closeNews() {
-    box_news.innerHTML = "";
-    faq_btn.style.visibility = "visible";
-}
