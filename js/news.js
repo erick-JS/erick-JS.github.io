@@ -1,19 +1,18 @@
-import {key} from './key.js';
-
-//var faq_btn = document.querySelector(".fab");
+var faq_btn = document.querySelector(".fab");
 var noticias = document.getElementById("noticias");
 var box_news = document.getElementById("box_news");
 var covid_box = document.getElementById("box");
-//var minimize = document.getElementById("minimize")
+var minimize = document.getElementById("minimize")
 
 box_news.innerHTML = "";
 
 noticias.addEventListener("click", openNews);
-//minimize.addEventListener("click", closeNews);
+minimize.addEventListener("click", closeNews);
 
 
-function viewNews(apikey) {
+function viewNews() {
     //URL onde está a APi
+    var apikey = '5df8ff5340dd4105bc6f4cf868af7b96' 
     var url = 'https://newsapi.org/v2/top-headlines?' +
         'q=coronavírus&' +
         'country=br&' +
@@ -59,11 +58,6 @@ function viewNews(apikey) {
     });
 }
 
-/*function closeNews() {
-    box_news.innerHTML = "";
-    faq_btn.style.visibility = "visible";
-}*/
-
 function openNews() {
     covid_box.style.visibility = "hidden";
     box_news.innerHTML = "<div class='faq' style='height: 430px;' id='box_news'>" +
@@ -72,6 +66,10 @@ function openNews() {
         "<div class='news' id='last_news'></div>" +
         "</div>";
 
-    viewNews(key);
+    viewNews();
 }
 
+function closeNews() {
+    box_news.innerHTML = "";
+    faq_btn.style.visibility = "visible";
+}
