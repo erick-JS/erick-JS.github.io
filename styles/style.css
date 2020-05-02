@@ -182,7 +182,8 @@ i {
   bottom: 32px;
   right: 32px;
   width: 250px;
-  height: 430px;
+  /*height: 430px;*/
+  height: 300px;
   float: right;
   box-shadow: 1px 2px 4px black;
   border-radius: 5px;
@@ -545,7 +546,8 @@ footer {
     bottom: 32px;
     right: 32px;
     width: 250px;
-    height: 430px;
+    /*height: 430px;*/
+    height: 300px;
     float: right;
     box-shadow: 1px 2px 4px black;
     border-radius: 5px;

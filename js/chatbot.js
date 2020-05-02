@@ -32,6 +32,6 @@ function closeFaq() {
 
 function openFaq() {
   covid_box.style.visibility = "hidden";
-  faq_box.innerHTML = "<div class='faq' id='faq_box' style='background:#129cbe;'><i class='fas fa-window-minimize' id='minimize' style='font-size:20px;color:white;float:right;' onclick='closeFaq()'></i><iframe allow='microphone;' class='chatbot' src='https://console.dialogflow.com/api-client/demo/embedded/cdecefe6-d25a-4cd2-9766-a2e36132cd2f'></iframe></div>";
+  faq_box.innerHTML = "<div class='faq' id='faq_box' style='background:#129cbe;height:430px'><i class='fas fa-window-minimize' id='minimize' style='font-size:20px;color:white;float:right;' onclick='closeFaq()'></i><iframe allow='microphone;' class='chatbot' src='https://console.dialogflow.com/api-client/demo/embedded/cdecefe6-d25a-4cd2-9766-a2e36132cd2f'></iframe></div>";
 }
 

@@ -11,19 +11,18 @@ minimize.addEventListener("click", closeNews);
 
 function viewNews() {
     //URL onde está a API
-    //var apiKey = '5df8ff5340dd4105bc6f4cf868af7b96';
+    var apiKey = process.env.API_KEY;
     var url = 'https://newsapi.org/v2/top-headlines?' +
         'q=coronavírus&' +
         'country=br&' +
         'sortBy=popularity&' +
-        `apiKey=5df8ff5340dd4105bc6f4cf868af7b96`;
-
+        `apiKey=${apiKey}`;
 
     //leitura da API
     fetch(url).then((res) => {
         return res.json();
     }).then((data) => {
-        console.log(data);
+        //console.log(data);
         data.articles.forEach(article => {
             //Imagem da notícia
             var img = document.createElement('img');
@@ -59,7 +58,7 @@ function viewNews() {
 
 function openNews() {
     covid_box.style.visibility = "hidden";
-    box_news.innerHTML = "<div class='faq' id='box_news'>" +
+    box_news.innerHTML = "<div class='faq' style='height: 430px;' id='box_news'>" +
         "<div class='topo' style='height: 85px;'><i class='fas fa-window-minimize' id='minimize' style='font-size:20px;color:white;float:right;' onclick='closeNews()'></i>" +
         "<br><br><p class='mensagem'>Veja abaixo as últimas notícias sobre o COVID-19.</p></div>" +
         "<div class='news' id='last_news'></div>" +

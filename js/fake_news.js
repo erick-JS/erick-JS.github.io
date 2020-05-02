@@ -1,6 +1,6 @@
 //Criação da API com base nos dados do Ministério da Saúde
 
-var request = require('request');
+/*var request = require('request');
 var cheerio = require('cheerio');
 
 for (var i = 0; i <= 30; i += 10) {
@@ -47,3 +47,11 @@ for (var i = 0; i <= 30; i += 10) {
     country: "Brasil",
     job: "Programador"
 }*/
+
+var url = 'http://localhost:8080/';
+
+fetch(url).then((res) => {
+    return res.json();
+}).then((data) => {
+    console.log(data);
+})
