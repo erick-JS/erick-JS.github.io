@@ -12,7 +12,7 @@
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "jquery": "^3.5.0",
-    "nodemon": "^2.0.3",
+    "nodemon": "^2.0.20",
     "puppeteer": "^2.1.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
